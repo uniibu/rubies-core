@@ -31,6 +31,7 @@ namespace Checkpoints
             (20500, CheckPointBlock3)
             (43245, CheckpointBlock4)
             (56700, CheckPointBlock5)
+            (84500, CheckPointBlock6)
 
     ;
 
