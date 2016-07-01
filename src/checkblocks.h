@@ -12,6 +12,7 @@ static const uint256 CheckPointBlock3("fe4a9522bf2ea64494c92683a9e917cf9d99786e7
 static const uint256 CheckpointBlock4("6a27d0489c4c501572fdcc426db95ad11f71d95b4ffb0bf73df2823c7ec85961");
 static const uint256 CheckPointBlock5("a46e56c95b0cebf2a2b5d016f882abac9cd5972df93ed35b36c372542a79a6de");
 static const uint256 CheckPointBlock6("90f089f44bf1cbc7070cd5edd9919b341369b76b3aade770302ead1a12387906");
+static const uint256 ChechPointBlock7("4b937c595c17467858682fab75d4828ce5d39375c0169d29ac1a29f4dc7276ef");
 
 // Chechpoints to ensure the correct chain usage during sync
 

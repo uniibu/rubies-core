@@ -32,6 +32,7 @@ namespace Checkpoints
             (43245, CheckpointBlock4)
             (56700, CheckPointBlock5)
             (84500, CheckPointBlock6)
+            (108000, ChechPointBlock7)
 
     ;
 
