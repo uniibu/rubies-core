@@ -1,7 +1,8 @@
 TEMPLATE = app
 DEFINES += FN1 FN2
 FN1 = rubies-core
-FN2 = -qt-v
+win32:FN2 = -qt-win-v
+macx:FN2 = -qt-osx-v
 VERSION = 1.2.1.0
 TARGET = $$FN1$$FN2$$VERSION
 INCLUDEPATH += src src/json \
@@ -37,12 +38,13 @@ win32 {
     BOOST_LIB_PATH=C:/deps/boost_1_57_0/stage/lib
     BDB_INCLUDE_PATH=C:/deps/db-4.8.30.NC/build_unix
     BDB_LIB_PATH=C:/deps/db-4.8.30.NC/build_unix
-    OPENSSL_INCLUDE_PATH=C:/deps/openssl-1.0.2a/include
-    OPENSSL_LIB_PATH=C:/deps/openssl-1.0.2a
+    OPENSSL_INCLUDE_PATH=C:/deps/openssl-1.0.1l/include
+    OPENSSL_LIB_PATH=C:/deps/openssl-1.0.1l
     MINIUPNPC_INCLUDE_PATH=C:/deps/
     MINIUPNPC_LIB_PATH=C:/deps/miniupnpc
-    QRENCODE_INCLUDE_PATH=C:/deps/qrcode-win32-3.1.1/include
-    QRENCODE_LIB_PATH=C:/deps/qrcode-win32-3.1.1/dll
+    QRENCODE_INCLUDE_PATH=C:/deps/qrencode-3.4.4
+    QRENCODE_LIB_PATH=C:/deps/qrencode-3.4.4/.libs
+
 }
 
 # for boost 1.37, add -mt to the boost libraries
@@ -92,7 +94,7 @@ contains(USE_QRCODE, 1) {
     DEFINES += USE_QRCODE
     macx:LIBS += -lqrencode
     win32:INCLUDEPATH +=$$QRENCODE_INCLUDE_PATH
-    win32:LIBS += $$join(QRENCODE_LIB_PATH,,-L) -lqrcodelib
+    win32:LIBS += $$join(QRENCODE_LIB_PATH,,-L) -lqrencode
     !win32:!macx:LIBS += -lqrencode
 }
 
