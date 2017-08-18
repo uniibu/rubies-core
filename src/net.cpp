@@ -1154,6 +1154,7 @@ static const char *strDNSSeed[][2] = {
     {"node6.betterbets.io", "node6.betterbets.io"},
     {"node7.betterbets.io", "node7.betterbets.io"},
     {"node8.betterbets.io", "node8.betterbets.io"},
+    {"rbies2.bost.link", "rbies2.bost.link"},
 };
 
 void ThreadDNSAddressSeed(void* parg)

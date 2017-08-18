@@ -1,7 +1,7 @@
 TEMPLATE = app
 DEFINES += FN1 FN2
 fName1 = rubies-core
-VERSION = 1.3.0.0
+VERSION = 1.3.0.1
 contains(QT_ARCH, i386) {
     fName2 = "-qt-x86-v"
 } else {
